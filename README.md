@@ -183,6 +183,14 @@ VALUES ('Usuario', 'usuario@forohub.com', '$2a$10$...');
 }
 ```
 
+## 📖 Documentación Swagger
+
+La API cuenta con documentación automática generada con SpringDoc OpenAPI.
+
+Accede en: **http://localhost:8080/swagger-ui/index.html**
+
+![Swagger UI](https://img.shields.io/badge/Swagger-UI-85EA2D?style=for-the-badge&logo=swagger)
+
 ## 🔒 Seguridad
 
 - Autenticación stateless con JWT
