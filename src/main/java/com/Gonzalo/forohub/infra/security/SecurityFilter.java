@@ -28,7 +28,7 @@ public class SecurityFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
 
         var authHeader = request.getHeader("Authorization");
-        if (authHeader != null) {
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
             var token = authHeader.replace("Bearer ", "");
             var subject = tokenService.getSubject(token);
             var usuario = usuarioRepository.findByCorreoElectronico(subject);
